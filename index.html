@@ -12,8 +12,21 @@
     <header class="header">
         <img src="images/logo.png" alt="アリカロゴ" class="header__logo">
         <div class="header__contact">
-            <button class="header__contact-free button button-free"><span class="header__contact-red">無料</span>で今すぐ相談する</button>
-            <button class="header__contact-line button button-line">LINE相談はこちら</button>
+            <button class="header__button header__button-free button button-free">
+                <div class="button__container header__button-container header__button-container-free">
+                    <div class="button-free-circle header__button-free-circle">
+                        <span class="header__button-free-circle-big">1</span>分で<br>入力完了
+                    </div>
+                    <p class="header__button-free-text"><span class="button-free-red">無料</span>で今すぐ相談する</p>
+                    <span class="button-arrow button-arrow-free header__button-arrow">▶</span>
+                </div>
+            </button>
+            <button class="header__button header__button-line button button-line">
+                <div class="button__container header__button-container header__button-container-line">
+                    <p class="button-line-text header__button-line-text">LINE相談はこちら</p>
+                    <span class="button-arrow button-arrow-line header__button-arrow">▶</span>
+                </div>
+            </button>
         </div>
     </header>
     <main>
@@ -21,17 +34,17 @@
             <div class="fv__container">
                 <div class="fv__text">
                     <p class="fv__subtitle">大学発AIマーケティング×関西トップクラスの<br>SNSマーケター監修</p>
-                    <h1 class="fv__title"><span class="fv__title-quote">"</span><span class="fv__title-big">AI集客</span><span class="fv__title-quote">"</span><br>丸投げください</h1>
+                    <h1 class="fv__title"><span class="fv__title-quote">“</span><span class="fv__title-big">AI集客</span><span class="fv__title-quote">”</span><br>丸投げください</h1>
                 </div>
                 <div class="fv__content">
                     <div class="fv__content-item">
-                        <p><span>企画・運用・分析</span><br>まで一貫して<br>プロに丸投げ！</p>
+                        <p><span class="fv__content-item-orange">企画・運用・分析</span><br>まで一貫して<br>プロに丸投げ！</p>
                     </div>
                     <div class="fv__content-item">
-                        <p><span>幅広い分野</span><br>のWeb集客に対応！</p>
+                        <p><span class="fv__content-item-orange">幅広い分野</span><br>のWeb集客に対応！</p>
                     </div>
                     <div class="fv__content-item">
-                        <p>AIの導入により<span><br>集客コストの削減</span><br>が実現！</p>
+                        <p>AIの導入により<span class="fv__content-item-orange">集客コストの削減</span><br>が実現！</p>
                     </div>
                 </div>
             </div>
@@ -42,7 +55,7 @@
         <section class="problem">
             <img src="images/problem_icon.png" alt="お悩みアイコン" class="problem__image">
             <div class="problem__text">
-                <h2 class="problem__title">こんな<span class="problem__title-big">お悩み</span>ありませんか？</h2>
+                <h2 class="section__title problem__title">こんな<span class="problem__title-big">お悩み</span>ありませんか？</h2>
                 <ul class="problem__list">
                     <li class="problem__list-item"><span class="problem__list-checkbox"></span>SNSアカウントは作ったけど、ノウハウがなくてほったらかし。</li>
                     <li class="problem__list-item"><span class="problem__list-checkbox"></span>忙しくて、コンテンツのネタ決めや作成をする時間がない。</li>
@@ -57,120 +70,138 @@
                 <div class="solution__arrow-item"></div>
             </div>
             <div class="solution__container">
-                <h2 class="solution__title"><span class="solution__title-point">その悩み、</span><br><span class="solution__title-big">アリカ</span>が解決します！</h2>
-                <div class="solution__container-items">
-                    <div class="solution__container-item">
-                        <div class="solution__container-item-title">
-                            <h3>Web集客のプロに企画・運用・分析を一貫して任せられる！</h3>
+                <div class="solution__inner inner">               
+                    <h2 class="section__title solution__title"><span class="solution__title-point">その悩み、</span><br><span class="solution__title-big">アリカ</span>が解決します！</h2>
+                    <div class="solution__container-items">
+                        <div class="solution__container-item">
+                            <div class="solution__container-item-title">
+                                <h3>Web集客のプロに企画・運用・分析を一貫して任せられる！</h3>
+                            </div>
+                            <div class="solution__container-item-content">
+                                <img src="images/solution01.png" alt="Web集客プロフェッショナル" class="solution__container-item-image">
+                                <p class="solution__container-item-text">
+                                    大学発AIマーケターと関西トップクラスの実績を持つSNSマーケターが企画から運用、分析までを一貫して対応します。<br>
+                                    貴社が持つWeb集客のお悩みをお聞かせください。
+                                </p>
+                            </div>
                         </div>
-                        <div class="solution__container-item-content">
-                            <img src="images/solution01.png" alt="Web集客プロフェッショナル" class="solution__container-item-image">
-                            <p class="solution__container-item-text">
-                                大学発AIマーケターと関西トップクラスの実績を持つSNSマーケターが企画から運用、分析までを一貫して対応します。<br>
-                                貴社が持つWeb集客のお悩みをお聞かせください。
-                            </p>
+                        <div class="solution__container-item">
+                            <div class="solution__container-item-title">
+                                <h3>AIの導入により、サービスの向上やコストの削減が実現！</h3>
+                            </div>
+                            <div class="solution__container-item-content">
+                                <img src="images/solution02.png" alt="AI導入によるコスト削減" class="solution__container-item-image">
+                                <p class="solution__container-item-text">
+                                        お客様の目的に合わせて専任のAIマーケターがオリジナルのプロンプトを開発します。<br>
+                                        それによって運用における人的作業を減らすことができ、コストを抑えてより多くのユーザーにリーチできます。
+                                </p>
+                            </div>
                         </div>
-                    </div>
-                    <div class="solution__container-item">
-                        <div class="solution__container-item-title">
-                            <h3>AIの導入により、サービスの向上やコストの削減が実現！</h3>
-                        </div>
-                        <div class="solution__container-item-content">
-                            <img src="images/solution02.png" alt="AI導入によるコスト削減" class="solution__container-item-image">
-                            <p class="solution__container-item-text">
-                                    お客様の目的に合わせて専任のAIマーケターがオリジナルのプロンプトを開発します。<br>
-                                    それによって運用における人的作業を減らすことができ、コストを抑えてより多くのユーザーにリーチできます。
-                            </p>
-                        </div>
-                    </div>
-                    <div class="solution__container-item">
-                        <div class="solution__container-item-title">
-                            <h3>さまざまな方面から貴社のWeb集客をアシストします</h3>
-                        </div>
-                        <div class="solution__container-item-content">
-                            <img src="images/solution03.png" alt="Web集客サポート" class="solution__container-item-image">
-                            <p class="solution__container-item-text">「Webサイト/LP制作、SNSマーケティング、AIマーケティング、システム・アプリ開発」の事業を手掛ける当社だからこそできるご提案で貴社のWeb集客に貢献します。</p>
+                        <div class="solution__container-item">
+                            <div class="solution__container-item-title">
+                                <h3>さまざまな方面から貴社のWeb集客をアシストします</h3>
+                            </div>
+                            <div class="solution__container-item-content">
+                                <img src="images/solution03.png" alt="Web集客サポート" class="solution__container-item-image">
+                                <p class="solution__container-item-text">「Webサイト/LP制作、SNSマーケティング、AIマーケティング、システム・アプリ開発」の事業を手掛ける当社だからこそできるご提案で貴社のWeb集客に貢献します。</p>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
         <section class="cv">
-            <h2 class="cv__title">無料相談はこちら</h2>
+            <img src="images/cv.png" alt="無料相談はこちら" class="cv__image">
+            <h2 class="section__title cv__title">無料相談はこちら</h2>
             <div class="cv__container">
-                <p>＼まずはお気軽にご連絡ください／</p>
+                <p class="cv__text">＼まずはお気軽にご連絡ください／</p>
                 <div class="cv__buttons">
-                    <button class="cv__button button button-free cv__button-free">無料相談はこちら</button>
-                    <button class="cv__button button button-line cv__button-line">LINE相談はこちら</button>
+                    <button class="cv__button button button-free cv__button-free">
+                        <div class="button__container cv__button-container cv__button-free-container">
+                            <div class="button-free-circle cv__button-free-circle">
+                                <span class="cv__button-free-circle-big">1</span>分で<br>入力完了
+                            </div>
+                            <p class="cv__button-free-text button-free-text"><span class="button-free-red cv__button-free-red">無料</span>で今すぐ相談する</p>
+                            <span class="button-arrow button-arrow-free cv__button-arrow">▶</span>
+                        </div>
+                    </button>
+                    <button class="cv__button button button-line cv__button-line">
+                        <div class="button__container cv__button-container cv__button-line-container">
+                            <p class="cv__button-line-text button-line-text">LINE相談はこちら</p>
+                            <span class="button-arrow button-arrow-line cv__button-arrow">▶</span>
+                        </div>
+                    </button>
                 </div>
             </div>
         </section>
         <section class="feature">
             <div class="feature__inner inner">
-                <h2 class="section__title feature__title">アリカの特徴</h2>
                 <div class="feature__container">
-                    <div class="feature__container-item">
-                        <div class="feature__container-title">
-                            <p class="feature__container-title-tag">FEATURE</p>
-                            <div class="feature__container-title-text-container">
-                                <div class="feature__container-title-text-number">01</div>
-                                <h3 class="feature__container-title-text">創造力にあふれる<br>プロマーケター集団</h3>
+                    <h2 class="section__title feature__title">アリカの特徴</h2>
+                    <div class="feature__container-box">
+                        <div class="feature__container-item">
+                            <div class="feature__container-title">
+                                <p class="feature__container-title-tag">FEATURE</p>
+                                <div class="feature__container-title-text-container">
+                                    <div class="feature__container-title-text-number">01</div>
+                                    <h3 class="feature__container-title-text">創造力にあふれる<br>プロマーケター集団</h3>
+                                </div>
+                            </div>
+                            <div class="feature__container-text">
+                                <div class="feature__container-text-line"></div>
+                                <p class="feature__container-text-text">市場の動向を的確に捉え、AIを用いたデータ分析とマーケター独自の発想を掛け合わせることで、競争の激しい業界でも成果に繋げます。戦略設計から実行、改善まで一貫してサポートし、貴社の事業成長に貢献します！</p>
                             </div>
                         </div>
-                        <div class="feature__container-text">
-                            <div class="feature__container-text-line"></div>
-                            <p class="feature__container-text-text">市場の動向を的確に捉え、AIを用いたデータ分析とマーケター独自の発想を掛け合わせることで、競争の激しい業界でも成果に繋げます。戦略設計から実行、改善まで一貫してサポートし、貴社の事業成長に貢献します！</p>
-                        </div>
+                        <img src="images/feature.png" alt="創造力にあふれるプロマーケター集団" class="feature__container-image">
                     </div>
-                    <img src="images/feature.png" alt="創造力にあふれるプロマーケター集団" class="feature__container-image">
-                </div>
-                <div class="feature__container">
-                    <div class="feature__container-item">
-                        <div class="feature__container-title">
-                            <p class="feature__container-title-tag">FEATURE</p>
-                            <div class="feature__container-title-text-container">
-                                <div class="feature__container-title-text-number">02</div>
-                                <h3 class="feature__container-title-text">総フォロワー数15万人越え！<br>神戸１のSNSメディアを運用するマーケター在中</h3>
+                    <div class="feature__container-box">
+                        <div class="feature__container-item">
+                            <div class="feature__container-title">
+                                <p class="feature__container-title-tag">FEATURE</p>
+                                <div class="feature__container-title-text-container">
+                                    <div class="feature__container-title-text-number">02</div>
+                                    <h3 class="feature__container-title-text">総フォロワー数15万人越え！<br>神戸１のSNSメディアを運用するマーケター在中</h3>
+                                </div>
+                            </div>
+                            <div class="feature__container-text">
+                                <div class="feature__container-text-line"></div>
+                                <p class="feature__container-text-text">関西トップクラスのSNSマーケターが貴社の企業PRに貢献します。展開しているサービスは、公式アカウント運用や自社メディア「Phase Space」でのPR、ショート動画作成など！貴社にぴったりなSNS運用方法を一緒に考えましょう！</p>
                             </div>
                         </div>
-                        <div class="feature__container-text">
-                            <div class="feature__container-text-line"></div>
-                            <p class="feature__container-text-text">関西トップクラスのSNSマーケターが貴社の企業PRに貢献します。展開しているサービスは、公式アカウント運用や自社メディア「Phase Space」でのPR、ショート動画作成など！貴社にぴったりなSNS運用方法を一緒に考えましょう！</p>
-                        </div>
+                        <img src="images/feature.png" alt="創造力にあふれるプロマーケター集団" class="feature__container-image">
                     </div>
-                    <img src="images/feature.png" alt="創造力にあふれるプロマーケター集団" class="feature__container-image">
-                </div>
-                <div class="feature__container">
-                    <div class="feature__container-item">
-                        <div class="feature__container-title">
-                            <p class="feature__container-title-tag">FEATURE</p>
-                            <div class="feature__container-title-text-container">
-                                <div class="feature__container-title-text-number">03</div>
-                                <h3 class="feature__container-title-text">ジャンルに問わず対応！<br>幅広いニーズにお応えします！</h3>
+                    <div class="feature__container-box feature__container-box-reverse">
+                        <div class="feature__container-item">
+                            <div class="feature__container-title">
+                                <p class="feature__container-title-tag">FEATURE</p>
+                                <div class="feature__container-title-text-container">
+                                    <div class="feature__container-title-text-number">03</div>
+                                    <h3 class="feature__container-title-text">ジャンルに問わず対応！<br>幅広いニーズにお応えします！</h3>
+                                </div>
+                            </div>
+                            <div class="feature__container-text">
+                                <div class="feature__container-text-line"></div>
+                                <p class="feature__container-text-text">これまでに有名大学様や上場企業様のWeb集客を担当してきました。さまざまな業界からのご依頼も、業界分析から細かく行いご対応いたします！</p>
                             </div>
                         </div>
-                        <div class="feature__container-text">
-                            <div class="feature__container-text-line"></div>
-                            <p class="feature__container-text-text">これまでに有名大学様や上場企業様のWeb集客を担当してきました。さまざまな業界からのご依頼も、業界分析から細かく行いご対応いたします！</p>
-                        </div>
+                        <img src="images/feature.png" alt="創造力にあふれるプロマーケター集団" class="feature__container-image">
                     </div>
-                    <img src="images/feature.png" alt="創造力にあふれるプロマーケター集団" class="feature__container-image">
-                </div>
-                <div class="feature__container">
-                    <div class="feature__container-item">
-                        <div class="feature__container-title">
-                            <p class="feature__container-title-tag">FEATURE</p>
-                            <div class="feature__container-title-text-container">
-                                <div class="feature__container-title-text-number">04</div>
-                                <h3 class="feature__container-title-text">最新のデジタルマーケティング手法でターゲットにリーチします！</h3>
+                    <div class="feature__container-box">
+                        <div class="feature__container-item">
+                            <div class="feature__container-title">
+                                <p class="feature__container-title-tag">FEATURE</p>
+                                <div class="feature__container-title-text-container">
+                                    <div class="feature__container-title-text-number">04</div>
+                                    <h3 class="feature__container-title-text">最新のデジタルマーケティング手法でターゲットにリーチします！</h3>
+                                </div>
+                            </div>
+                            <div class="feature__container-text">
+                                <div class="feature__container-text-line"></div>
+                                <p class="feature__container-text">SEO、SNS広告、リスティング広告、コンテンツマーケティングなど、多様なマーケティング手法を活用し、AIや自動化ツールを駆使して効果的な運用を実現します。</p>
                             </div>
                         </div>
-                        <div class="feature__container-text">
-                            <div class="feature__container-text-line"></div>
-                            <p class="feature__container-text">SEO、SNS広告、リスティング広告、コンテンツマーケティングなど、多様なマーケティング手法を活用し、AIや自動化ツールを駆使して効果的な運用を実現します。</p>
-                        </div>
+                        <img src="images/feature.png" alt="創造力にあふれるプロマーケター集団" class="feature__container-image">
                     </div>
-                    <img src="images/feature.png" alt="創造力にあふれるプロマーケター集団" class="feature__container-image">
                 </div>
             </div>
         </section>
@@ -224,7 +255,30 @@
                 </div>
             </div>
         </section>
-        <section class="cv"></section>
+        <section class="cv">
+            <img src="images/cv.png" alt="無料相談はこちら" class="cv__image">
+            <h2 class="section__title cv__title">無料相談はこちら</h2>
+            <div class="cv__container">
+                <p class="cv__text">＼まずはお気軽にご連絡ください／</p>
+                <div class="cv__buttons">
+                    <button class="cv__button button button-free cv__button-free">
+                        <div class="button__container cv__button-container cv__button-free-container">
+                            <div class="button-free-circle cv__button-free-circle">
+                                <span class="cv__button-free-circle-big">1</span>分で<br>入力完了
+                            </div>
+                            <p class="cv__button-free-text button-free-text"><span class="button-free-red cv__button-free-red">無料</span>で今すぐ相談する</p>
+                            <span class="button-arrow button-arrow-free cv__button-arrow">▶</span>
+                        </div>
+                    </button>
+                    <button class="cv__button button button-line cv__button-line">
+                        <div class="button__container cv__button-container cv__button-line-container">
+                            <p class="cv__button-line-text button-line-text">LINE相談はこちら</p>
+                            <span class="button-arrow button-arrow-line cv__button-arrow">▶</span>
+                        </div>
+                    </button>
+                </div>
+            </div>
+        </section>
         <section class="flow">
             <div class="flow__inner inner">
                 <h2 class="section__title flow__title">ご契約の流れ</h2>
@@ -331,7 +385,7 @@
         </section>
         <section class="faq">
             <div class="faq__inner inner">
-                <h2 class="section__title faq__title">よくある質問</h2>
+                <h2 class="section__title faq__title">よくある<br class="u-tb">質問</h2>
                 <div class="faq__container">
                     <div class="faq__container-item">
                         <div class="faq__container-item-question">
@@ -376,71 +430,86 @@
             </div>
         </section>
         <section class="contact">
-            <div class="contact__bubble">
-                <p class="contact__free">
-                    ご相談は<span class="contact__free-red">無料</span>です！
-                    <span class="contact__free-text">下記のお申し込みフォームよりご相談ください</span>
-                </p>
-            </div>
             <div class="contact__inner inner">
-                <h2 class="section__title contact__title">お問い合わせ</h2>
-                <form action="" class="contact__form">
-                    <div class="contact__form-group">
-                        <label class="contact__form-label" for="name">お名前 <span class="contact__form-required-mark">*</span></label>
-                        <input class="contact__form-input" type="text" id="name" name="name" required placeholder="山田 太郎">
+                <div class="contact__bubble">
+                    <div class="contact__bubble-text-container">
+                        <p class="contact__free">
+                            ご相談は<span class="contact__free-red">無料</span>です！<span class="contact__free-text"><br>まずは、下記のお申し込みフォームよりご相談ください</span>
+                        </p>
                     </div>
-                    <div class="contact__form-group">
-                        <label class="contact__form-label" for="company">会社名 <span class="contact__form-required-mark">*</span></label>
-                        <input class="contact__form-input" type="text" id="company" name="company" required placeholder="株式会社アリカ">
-                    </div>
-                    <div class="contact__form-group">
-                        <label class="contact__form-label" for="email">メールアドレス <span class="contact__form-required-mark">*</span></label>
-                        <input class="contact__form-input" type="email" id="email" name="email" required placeholder="example@example.com">
-                    </div>
-                    <div class="contact__form-group">
-                        <label class="contact__form-label" for="tel">電話番号</label>
-                        <input class="contact__form-input" type="text" id="tel" name="tel" placeholder="08012345678">
-                    </div>
-                    <div class="contact__form-group">
-                        <label class="contact__form-label" for="inquiry_type">ご興味のあるサービス<span class="contact__form-multiple-text">※複数選択可能</span></label>
-                        <div class="contact__form-checkbox-group">
-                            <div class="contact__form-checkbox-item">
-                                <input class="contact__form-checkbox-input" type="checkbox" id="inquiry_web" name="inquiry_type[]" value="web">
-                                <label class="contact__form-checkbox-label" for="inquiry_web">個別無料相談<span class="contact__form-supplement-text">(「まずは気軽に相談してみたい」という方はこちらを選んでください。)</span></label>
-                            </div>
-                            <div class="contact__form-checkbox-item">
-                                <input class="contact__form-checkbox-input" type="checkbox" id="inquiry_sns" name="inquiry_type[]" value="sns">
-                                <label class="contact__form-checkbox-label" for="inquiry_sns">クリエイティブ<span class="contact__form-supplement-text">(Webサイト・LP制作/コンテンツ作成 など)</span></label>
-                            </div>
-                            <div class="contact__form-checkbox-item">
-                                <input class="contact__form-checkbox-input" type="checkbox" id="inquiry_ai" name="inquiry_type[]" value="ai">
-                                <label class="contact__form-checkbox-label" for="inquiry_ai">SNSマーケティング<span class="contact__form-supplement-text">(PR代行/運用代行/キャスティング/イベント企画 など)</span></label>
-                            </div>
-                            <div class="contact__form-checkbox-item">
-                                <input class="contact__form-checkbox-input" type="checkbox" id="inquiry_system" name="inquiry_type[]" value="system">
-                                <label class="contact__form-checkbox-label" for="inquiry_system">AIマーケティング<span class="contact__form-supplement-text">(AIを活用したSEO対策などのマーケティング施策 など)</span></label>
-                            </div>
-                            <div class="contact__form-checkbox-item">
-                                <input class="contact__form-checkbox-input" type="checkbox" id="inquiry_other" name="inquiry_type[]" value="other">
-                                <label class="contact__form-checkbox-label" for="inquiry_other">システム・アプリ開発<span class="contact__form-supplement-text">(ios, Androidアプリ制作/AI技術開発/その他システム開発 など)</span></label>
+                </div>
+                <div class="contact__container">
+                    <h2 class="section__title contact__title">お問い合わせ</h2>
+                    <form action="" class="contact__form">
+                        <div class="contact__form-group">
+                            <label class="contact__form-label" for="name">お名前 <span class="contact__form-required-mark">*</span></label>
+                            <input class="contact__form-input" type="text" id="name" name="name" required placeholder="山田 太郎">
+                        </div>
+                        <div class="contact__form-group">
+                            <label class="contact__form-label" for="company">会社名 <span class="contact__form-required-mark">*</span></label>
+                            <input class="contact__form-input" type="text" id="company" name="company" required placeholder="株式会社アリカ">
+                        </div>
+                        <div class="contact__form-group">
+                            <label class="contact__form-label" for="email">メールアドレス <span class="contact__form-required-mark">*</span></label>
+                            <input class="contact__form-input" type="email" id="email" name="email" required placeholder="example@example.com">
+                        </div>
+                        <div class="contact__form-group">
+                            <label class="contact__form-label" for="tel">電話番号</label>
+                            <input class="contact__form-input" type="text" id="tel" name="tel" placeholder="08012345678">
+                        </div>
+                        <div class="contact__form-group">
+                            <label class="contact__form-label" for="inquiry_type">ご興味のあるサービス<span class="contact__form-multiple-text">※複数選択可能</span></label>
+                            <div class="contact__form-checkbox-group">
+                                <div class="contact__form-checkbox-item">
+                                    <input class="contact__form-checkbox-input" type="checkbox" id="inquiry_web" name="inquiry_type[]" value="web">
+                                    <label class="contact__form-checkbox-label" for="inquiry_web">個別無料相談<span class="contact__form-supplement-text">(「まずは気軽に相談してみたい」という方はこちらを選んでください。)</span></label>
+                                </div>
+                                <div class="contact__form-checkbox-item">
+                                    <input class="contact__form-checkbox-input" type="checkbox" id="inquiry_sns" name="inquiry_type[]" value="sns">
+                                    <label class="contact__form-checkbox-label" for="inquiry_sns">クリエイティブ<span class="contact__form-supplement-text">(Webサイト・LP制作/コンテンツ作成 など)</span></label>
+                                </div>
+                                <div class="contact__form-checkbox-item">
+                                    <input class="contact__form-checkbox-input" type="checkbox" id="inquiry_ai" name="inquiry_type[]" value="ai">
+                                    <label class="contact__form-checkbox-label" for="inquiry_ai">SNSマーケティング<span class="contact__form-supplement-text">(PR代行/運用代行/キャスティング/イベント企画 など)</span></label>
+                                </div>
+                                <div class="contact__form-checkbox-item">
+                                    <input class="contact__form-checkbox-input" type="checkbox" id="inquiry_system" name="inquiry_type[]" value="system">
+                                    <label class="contact__form-checkbox-label" for="inquiry_system">AIマーケティング<span class="contact__form-supplement-text">(AIを活用したSEO対策などのマーケティング施策 など)</span></label>
+                                </div>
+                                <div class="contact__form-checkbox-item">
+                                    <input class="contact__form-checkbox-input" type="checkbox" id="inquiry_other" name="inquiry_type[]" value="other">
+                                    <label class="contact__form-checkbox-label" for="inquiry_other">システム・アプリ開発<span class="contact__form-supplement-text">(ios, Androidアプリ制作/AI技術開発/その他システム開発 など)</span></label>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="contact__form-group">
-                        <label class="contact__form-label" for="message">お問い合わせ内容 <span class="contact__form-required-mark">*</span></label>
-                        <p class="contact__form-supplement-text">※業種や現在の課題、参考サイト等を記入いただくとお話がスムーズに進みます。</p>
-                        <textarea class="contact__form-textarea contact__form-input" id="message" name="message" rows="6" required placeholder="お問い合わせ内容をご記入ください"></textarea>
-                    </div>
-                    <div class="contact__form-group contact__form-group--privacy">
-                        <input class="contact__form-checkbox-input" type="checkbox" id="privacy" name="privacy" required>
-                        <label class="contact__form-checkbox-label" for="privacy">プライバシーポリシーに同意する</label>
-                    </div>
-                    <button type="submit" class="contact__form-submit-button button">送信する</button>
-                </form>
+                        <div class="contact__form-group">
+                            <label class="contact__form-label" for="message">お問い合わせ内容 <span class="contact__form-required-mark">*</span></label>
+                            <p class="contact__form-supplement-text">※業種や現在の課題、参考サイト等を記入いただくとお話がスムーズに進みます。</p>
+                            <textarea class="contact__form-textarea contact__form-input" id="message" name="message" rows="6" required placeholder="お問い合わせ内容をご記入ください"></textarea>
+                        </div>
+                        <div class="contact__form-group contact__form-group--privacy">
+                            <input class="contact__form-checkbox-input" type="checkbox" id="privacy" name="privacy" required>
+                            <label class="contact__form-checkbox-label" for="privacy">プライバシーポリシーに同意する</label>
+                        </div>
+                        <button type="submit" class="contact__form-submit-button button">送信する</button>
+                    </form>
+                </div>
             </div>
         </section>
     </main>
-    <footer></footer>
+    <footer class="footer">
+        <div class="footer__inner inner">
+            <div class="footer__container">
+                <p class="footer__container-text">株式会社アリカ</p>
+                <p class="footer__container-text">〒651-0084</p>
+                <p class="footer__container-text">兵庫県神戸市中央区磯辺通1丁目20-505</p>
+            </div>
+            <hr class="footer__hr">
+            <div class="footer__container-privacy">
+                <a href="" class="footer__container-privacy-link">プライバシーポリシー</a>
+            </div>
+        </div>
+    </footer>
     <script src="script.js"></script>
 </body>
 </html>
