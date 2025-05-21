@@ -38,3 +38,33 @@ document.addEventListener('DOMContentLoaded', function () {
         });
     });
 });
+
+document.addEventListener('DOMContentLoaded', function () {
+    const solutionTitleYellowBox = document.querySelectorAll('.solution__container-item-title');
+
+    let maxHeight = 0;
+    solutionTitleYellowBox.forEach(box => {
+        const height = box.offsetHeight;
+        if (height > maxHeight) {
+            maxHeight = height;
+        }
+    });
+
+    solutionTitleYellowBox.forEach(box => {
+        box.style.height = `${maxHeight}px`;
+    });
+});
+
+document.addEventListener('DOMContentLoaded', function () {
+    const hamburgerButton = document.querySelector('.header__hamburger-button');
+    const hamburger = document.querySelector('.header__hamburger');
+    const hamburgerNav = document.querySelector('.header__nav');
+    const hamburgerContainer = document.querySelector('.header__hamburger-container');
+
+    hamburgerButton.addEventListener('click', function () {
+        hamburgerContainer.classList.toggle('active');
+        hamburgerNav.classList.toggle('active');
+        hamburger.classList.toggle('active');
+    });
+});
+
