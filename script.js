@@ -29,29 +29,15 @@ document.addEventListener('DOMContentLoaded', function () {
     const faqItems = document.querySelectorAll('.faq__container-item');
 
     faqItems.forEach(item => {
-        item.addEventListener('click', function () {
-            const question = item.querySelector('.faq__container-item-question');
-            const answer = item.querySelector('.faq__container-item-answer');
-
-            question.classList.toggle('active');
+        const question = item.querySelector('.faq__container-item-question');
+        const answer = item.querySelector('.faq__container-item-answer');
+        const button = item.querySelector('.faq__container-item-question-button');
+        
+        question.addEventListener('click', () => {
+            // クリックされたアイテムの開閉を切り替え
             answer.classList.toggle('active');
+            button.classList.toggle('active');
         });
-    });
-});
-
-document.addEventListener('DOMContentLoaded', function () {
-    const solutionTitleYellowBox = document.querySelectorAll('.solution__container-item-title');
-
-    let maxHeight = 0;
-    solutionTitleYellowBox.forEach(box => {
-        const height = box.offsetHeight;
-        if (height > maxHeight) {
-            maxHeight = height;
-        }
-    });
-
-    solutionTitleYellowBox.forEach(box => {
-        box.style.height = `${maxHeight}px`;
     });
 });
 
@@ -65,6 +51,29 @@ document.addEventListener('DOMContentLoaded', function () {
         hamburgerContainer.classList.toggle('active');
         hamburgerNav.classList.toggle('active');
         hamburger.classList.toggle('active');
+    });
+});
+
+document.addEventListener('DOMContentLoaded', function() {
+    // 実績セクションのタブ切り替え
+    const achievementTabs = document.querySelectorAll('.achievement__container-tab');
+    
+    achievementTabs.forEach(tab => {
+        tab.addEventListener('click', () => {
+            const target = tab.getAttribute('data-tab');
+            const container = tab.closest('.achievement__container');
+            
+            container.querySelectorAll('.achievement__container-tab').forEach(t => {
+                t.classList.remove('active');
+            });
+            tab.classList.add('active');
+            
+            const contentContainer = container.querySelector('.achievement__container-item');
+            contentContainer.querySelectorAll('[data-tab-content]').forEach(content => {
+                content.classList.remove('active');
+            });
+            contentContainer.querySelector(`[data-tab-content="${target}"]`).classList.add('active');
+        });
     });
 });
 
