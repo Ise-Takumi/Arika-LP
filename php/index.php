@@ -1,3 +1,4 @@
+<?php include 'include/contact.php'; ?>
 <!DOCTYPE html>
 <html lang="ja">
 <head>
@@ -6,11 +7,16 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="destyle.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&family=Outfit:wght@100..900&display=swap" rel="stylesheet">
     <title>AI集客サービス | アリカ</title>
 </head>
 <body>
     <header class="header">
-        <img src="images/logo.png" alt="アリカロゴ" class="header__logo">
+        <a href="https://ari-ka.co.jp/" target="_blank">
+            <img src="images/logo.png" alt="アリカロゴ" class="header__logo">
+        </a>
         <div class="header__contact">
             <button class="header__button header__button-free button button-free">
                 <a href="/#contact">
@@ -18,7 +24,7 @@
                         <div class="button-free-circle header__button-free-circle">
                             <span class="header__button-free-circle-big">1</span>分で<br>入力完了
                         </div>
-                        <p class="header__button-free-text"><span class="button-free-red">無料</span>で今すぐ相談する</p>
+                        <p class="header__button-free-text button-free-text"><span class="button-free-red">無料</span>で今すぐ相談する</p>
                         <span class="button-arrow button-arrow-free header__button-arrow">▶</span>
                     </div>
                 </a>
@@ -38,40 +44,53 @@
             <img src="images/border.png" alt="ボーダー" class="fv__border">
             <div class="fv__container">
                 <div class="fv__text">
-                    <p class="fv__subtitle">大学発AIマーケティング×関西トップクラスの<br>SNSマーケター監修</p>
+                    <p class="fv__subtitle">大学発AIマーケティング<br class="u-sp">×<br class="u-sp">関西トップクラスの<br class="u-pc">SNSマーケター監修</p>
                     <img src="images/decoration.png" alt="デコレーション" class="fv__decoration">
                     <h1 class="fv__title"><span class="fv__title-quote">“</span><span class="fv__title-big">AI集客</span><span class="fv__title-quote">”</span><br>丸投げください</h1>
                 </div>
-                <div class="fv__content">
+                <div class="fv__content u-pc">
                     <div class="fv__content-item fv__content-item-1">
-                        <p class="fv__content-item-text"><span class="fv__content-item-orange">企画・運用・分析</span><br class="u-pc u-tb">まで一貫して<br class="u-pc u-tb">プロに丸投げ！</p>
+                        <p class="fv__content-item-text"><span class="fv__content-item-orange">企画・運用・分析</span><br class="u-pc">まで一貫して<br class="u-pc">プロに丸投げ！</p>
                     </div>
                     <div class="fv__content-item fv__content-item-2">
-                        <p class="fv__content-item-text"><span class="fv__content-item-orange">幅広い分野</span><br class="u-pc u-tb">のWeb集客に対応！</p>
+                        <p class="fv__content-item-text"><span class="fv__content-item-orange">幅広い分野</span><br class="u-pc">の<br class="u-sp">Web集客に<br class="u-sp">対応！</p>
                     </div>
                     <div class="fv__content-item fv__content-item-3">
-                        <p class="fv__content-item-text"><span class="fv__content-item-orange">AIの導入により</span><br class="u-pc u-tb">集客コストの削減が実現！</p>
+                        <p class="fv__content-item-text">AIの導入により<br><span class="fv__content-item-orange">集客コストの削減</span><br>が実現！</p>
                     </div>
                 </div>
             </div>
             <div class="fv__image-container">
                 <img src="images/fv.png" alt="AI集客イメージ" class="fv__image">
-                <img src="images/fv_sp.png" alt="AI集客イメージ" class="fv__image-sp">
+            </div>
+            <div class="fv__content u-sp">
+                <div class="fv__content-item fv__content-item-1">
+                    <p class="fv__content-item-text"><span class="fv__content-item-orange">企画・運用・分析</span><br>まで一貫して<br>プロに丸投げ！</p>
+                </div>
+                <div class="fv__content-item fv__content-item-2">
+                    <p class="fv__content-item-text"><span class="fv__content-item-orange">幅広い分野</span><br class="u-pc">の<br class="u-sp">Web集客に<br class="u-sp">対応！</p>
+                </div>
+                <div class="fv__content-item fv__content-item-3">
+                    <p class="fv__content-item-text">AIの導入により<br><span class="fv__content-item-orange">集客コストの削減</span><br>が実現！</p>
+                </div>
             </div>
         </section>
-        <section class="problem">
+        <section class="problem" id="problem">
             <div class="problem__inner inner">
-            <img src="images/problem_icon.png" alt="お悩みアイコン" class="problem__image">
-            <div class="problem__text">
-                <h2 class="section__title problem__title">こんな<span class="problem__title-big">お悩み</span>ありませんか？</h2>
-                <ul class="problem__list">
-                    <li class="problem__list-item"><span class="problem__list-checkbox"></span>SNSアカウントは作ったけど、ノウハウがなくてほったらかし。</li>
-                    <li class="problem__list-item"><span class="problem__list-checkbox"></span>忙しくて、コンテンツのネタ決めや作成をする時間がない。</li>
-                    <li class="problem__list-item"><span class="problem__list-checkbox"></span>オウンドメディアを運営しているけど、集客に繋がらない。</li>
-                </ul>
+                <div class="problem__inner-container">
+                    <img src="images/problem_icon.png" alt="お悩みアイコン" class="problem__image">
+                    <div class="problem__text">
+                        <h2 class="section__title problem__title">こんな<span class="problem__title-big">お悩み</span>ありませんか？</h2>
+                        <ul class="problem__list">
+                            <li class="problem__list-item"><span class="problem__list-checkbox"></span>SNSアカウントは作ったけど、ノウハウがなくてほったらかし。</li>
+                            <li class="problem__list-item"><span class="problem__list-checkbox"></span>忙しくて、コンテンツのネタ決めや作成をする時間がない。</li>
+                            <li class="problem__list-item"><span class="problem__list-checkbox"></span>オウンドメディアを運営しているけど、集客に繋がらない。</li>
+                        </ul>
+                    </div>
+                </div>
             </div>
         </section>
-        <section class="solution">
+        <section class="solution" id="solution">
             <img src="images/border.png" alt="ボーダー" class="solution__border">
             <div class="solution__arrow">
                 <div class="solution__arrow-item"></div>
@@ -117,7 +136,7 @@
                 </div>
             </div>
         </section>
-        <section class="cv">
+        <section class="cv" id="cv">
             <div class="cv__inner inner">
                 <img src="images/cv.png" alt="無料相談はこちら" class="cv__image">
                 <h2 class="section__title cv__title">無料相談は<br class="u-tb">こちら</h2>
@@ -147,7 +166,7 @@
                 </div>
             </div>
         </section>
-        <section class="feature">
+        <section class="feature" id="feature">
             <img src="images/border.png" alt="ボーダー" class="feature__border">
             <div class="feature__inner inner">
                 <div class="feature__container">
@@ -166,7 +185,7 @@
                                 <p class="feature__container-text-text">市場の動向を的確に捉え、AIを用いたデータ分析とマーケター独自の発想を掛け合わせることで、競争の激しい業界でも成果に繋げます。戦略設計から実行、改善まで一貫してサポートし、貴社の事業成長に貢献します！</p>
                             </div>
                         </div>
-                        <img src="images/feature.png" alt="創造力にあふれるプロマーケター集団" class="feature__container-image">
+                        <img src="images/feature01.png" alt="創造力にあふれるプロマーケター集団" class="feature__container-image">
                     </div>
                     <div class="feature__container-box">
                         <div class="feature__container-item">
@@ -182,7 +201,7 @@
                                 <p class="feature__container-text-text">関西トップクラスのSNSマーケターが貴社の企業PRに貢献します。展開しているサービスは、公式アカウント運用や自社メディア「Phase Space」でのPR、ショート動画作成など！貴社にぴったりなSNS運用方法を一緒に考えましょう！</p>
                             </div>
                         </div>
-                        <img src="images/feature.png" alt="創造力にあふれるプロマーケター集団" class="feature__container-image">
+                        <img src="images/feature02.png" alt="創造力にあふれるプロマーケター集団" class="feature__container-image">
                     </div>
                     <div class="feature__container-box feature__container-box-reverse">
                         <div class="feature__container-item">
@@ -198,7 +217,7 @@
                                 <p class="feature__container-text-text">これまでに有名大学様や上場企業様のWeb集客を担当してきました。さまざまな業界からのご依頼も、業界分析から細かく行いご対応いたします！</p>
                             </div>
                         </div>
-                        <img src="images/feature.png" alt="創造力にあふれるプロマーケター集団" class="feature__container-image">
+                        <img src="images/feature03.png" alt="創造力にあふれるプロマーケター集団" class="feature__container-image">
                     </div>
                     <div class="feature__container-box">
                         <div class="feature__container-item">
@@ -214,12 +233,12 @@
                                 <p class="feature__container-text">SEO、SNS広告、リスティング広告、コンテンツマーケティングなど、多様なマーケティング手法を活用し、AIや自動化ツールを駆使して効果的な運用を実現します。</p>
                             </div>
                         </div>
-                        <img src="images/feature.png" alt="創造力にあふれるプロマーケター集団" class="feature__container-image">
+                        <img src="images/feature04.png" alt="創造力にあふれるプロマーケター集団" class="feature__container-image">
                     </div>
                 </div>
             </div>
         </section>
-        <section class="achievement">
+        <section class="achievement" id="achievement">
             <div class="achievement__inner inner">
                 <h2 class="section__title achievement__title">実績紹介</h2>
                 <ul class="achievement__list">
@@ -257,7 +276,38 @@
                 </div>
                 <div class="achievement__container hidden" data-tab-target="ai-seo">
                     <div class="achievement__container-customer">
-                        <h3 class="achievement__container-customer-name">お客様B様 (AI×SEO運用)</h3>
+                        <h3 class="achievement__container-customer-name">大阪 映像制作会社様</h3>
+                    </div>
+                    <div class="achievement__container-tabs">
+                        <button class="achievement__container-tab active" data-tab="content">実績</button>
+                        <button class="achievement__container-tab" data-tab="image">イメージ</button>
+                    </div>
+                    <div class="achievement__container-item">
+                        <div class="achievement__container-item-content active" data-tab-content="content">
+                            <p class="achievement__container-item-content-text">Google検索<br><span class="achievement__container-item-content-text-big">1</span><span class="achievement__container-item-content-text-middle">位</span>獲得</p>
+                            <ul class="achievement__container-item-list">
+                                <li class="achievement__container-item-list-item">AI×SEOマーケティングサービス導入</li>
+                                <li class="achievement__container-item-list-item">
+                                    開始3ヶ月で<span>(2025.2月～着手)</span><br>
+                                    「動画の著作権に関する記事」でGoogle検索1位獲得<br>
+                                    「研修動画の作成に関する記事」でGoogle検索2位獲得
+                                </li>
+                            </ul>
+                            <div class="achievement__container-item-price">
+                                <div class="achievement__container-item-price-container">
+                                    <i class="fa-solid fa-yen-sign achievement__container-item-price-icon"></i>
+                                </div>
+                                <p class="achievement__container-item-price-text">月額運用費(戦略立案・実行)<br>15万円</p> 
+                            </div>
+                        </div>
+                        <div class="achievement__container-item-image-container" data-tab-content="image">
+                            <img src="images/achievement02.png" alt="大阪 映像制作会社様" class="achievement__container-item-image">
+                        </div>
+                    </div>
+                </div>
+                <div class="achievement__container hidden" data-tab-target="website">
+                    <div class="achievement__container-customer">
+                        <h3 class="achievement__container-customer-name">兵庫県立大学様</h3>
                     </div>
                     <div class="achievement__container-tabs">
                         <button class="achievement__container-tab active" data-tab="content">実績</button>
@@ -266,25 +316,55 @@
                     <div class="achievement__container-item">
                         <div class="achievement__container-item-content active" data-tab-content="content">
                             <ul class="achievement__container-item-list">
-                                <li class="achievement__container-item-list-item">AI×SEO 実績項目1</li>
-                                <li class="achievement__container-item-list-item">AI×SEO 実績項目2</li>
-                                <li class="achievement__container-item-list-item">AI×SEO 実績項目3</li>
+                                <li class="achievement__container-item-list-item">企画、制作から運用まで担当</li>
+                                <li class="achievement__container-item-list-item">制作期間：2ヶ月程度</li>
+                                <li class="achievement__container-item-list-item">運用期間：1年以上</li>
                             </ul>
                             <div class="achievement__container-item-price">
                                 <div class="achievement__container-item-price-container">
                                     <i class="fa-solid fa-yen-sign achievement__container-item-price-icon"></i>
                                 </div>
-                                <p class="achievement__container-item-price-text">AI×SEO 価格<br>YYY,YYY円(税抜)</p> 
+                                <p class="achievement__container-item-price-text">制作費：70万円<br>運用費：3万円</p> 
                             </div>
                         </div>
                         <div class="achievement__container-item-image-container" data-tab-content="image">
-                            <img src="images/achievement01.png" alt="お客様B様 (AI×SEO運用)" class="achievement__container-item-image">
+                            <img src="images/achievement03.png" alt="お客様B様 (AI×SEO運用)" class="achievement__container-item-image">
+                        </div>
+                    </div>
+                </div>
+                <div class="achievement__container hidden" data-tab-target="app">
+                    <div class="achievement__container-customer">
+                        <h3 class="achievement__container-customer-name">アプリ開発「Bevo for salon」</h3>
+                    </div>
+                    <div class="achievement__container-tabs">
+                        <button class="achievement__container-tab active" data-tab="content">実績</button>
+                        <button class="achievement__container-tab" data-tab="image">イメージ</button>
+                    </div>
+                    <div class="achievement__container-item">
+                        <div class="achievement__container-item-content active" data-tab-content="content">
+                            <ul class="achievement__container-item-list">
+                                <li class="achievement__container-item-list-item">制作、運用保守を担当</li>
+                                <li class="achievement__container-item-list-item">サービス認知向上のための施策提案まで行う</li>
+                                <li class="achievement__container-item-list-item">料金もサービスの売り上げに合わせる変動形式を採用</li>
+                                <li class="achievement__container-item-list-item">成果にコミットした明瞭会計</li>
+                            </ul>
+                            <div class="achievement__container-item-price">
+                                <div class="achievement__container-item-price-container">
+                                    <i class="fa-solid fa-yen-sign achievement__container-item-price-icon"></i>
+                                </div>
+                                <div>
+                                    <p class="achievement__container-item-price-text">開発費目安：1000万円<br>開発保守費：10万円</p> 
+                                </div>
+                            </div>
+                        </div>
+                        <div class="achievement__container-item-image-container" data-tab-content="image">
+                            <img src="images/achievement04.png" alt="アプリ開発「Bevo for salon」" class="achievement__container-item-image">
                         </div>
                     </div>
                 </div>
             </div>
         </section>
-        <section class="cv">
+        <section class="cv" id="cv">
             <div class="cv__inner inner">
                 <img src="images/cv.png" alt="無料相談はこちら" class="cv__image">
                 <h2 class="section__title cv__title">無料相談は<br class="u-tb">こちら</h2>
@@ -313,14 +393,14 @@
                 </div>
             </div>
         </section>
-        <section class="flow">
+        <section class="flow" id="flow">
             <img src="images/border.png" alt="ボーダー" class="flow__border">
             <div class="flow__inner inner">
                 <h2 class="section__title flow__title">ご契約後の流れ</h2>
                 <div class="flow__container">
                     <div class="flow__item">
                         <div class="flow__item-step">
-                            <p class="flow__item-step-number">STEP1</p>
+                            <p class="flow__item-step-number">STEP01</p>
                             <div class="flow__item-step-icon">
                                 <div class="flow__item-step-icon-self">
                                     <img src="images/flow_icon01.png" alt="STEP1" class="flow__item-step-icon-self-image">
@@ -336,7 +416,7 @@
                     </div>
                     <div class="flow__item">
                         <div class="flow__item-step">
-                            <p class="flow__item-step-number">STEP2</p>
+                            <p class="flow__item-step-number">STEP02</p>
                             <div class="flow__item-step-icon">
                                 <div class="flow__item-step-icon-self">
                                     <img src="images/flow_icon02.png" alt="STEP2" class="flow__item-step-icon-self-image">
@@ -352,7 +432,7 @@
                     </div>
                     <div class="flow__item">
                         <div class="flow__item-step">
-                            <p class="flow__item-step-number">STEP3</p>
+                            <p class="flow__item-step-number">STEP03</p>
                             <div class="flow__item-step-icon">
                                 <div class="flow__item-step-icon-self">
                                     <img src="images/flow_icon03.png" alt="STEP3" class="flow__item-step-icon-self-image">
@@ -368,7 +448,7 @@
                     </div>
                     <div class="flow__item">
                         <div class="flow__item-step">
-                            <p class="flow__item-step-number">STEP4</p>
+                            <p class="flow__item-step-number">STEP04</p>
                             <div class="flow__item-step-icon">
                                 <div class="flow__item-step-icon-self">
                                     <img src="images/flow_icon04.png" alt="STEP4" class="flow__item-step-icon-self-image">
@@ -384,7 +464,7 @@
                     </div>  
                     <div class="flow__item">
                         <div class="flow__item-step">
-                            <p class="flow__item-step-number">STEP5</p>
+                            <p class="flow__item-step-number">STEP05</p>
                             <div class="flow__item-step-icon">
                                 <div class="flow__item-step-icon-self">
                                     <img src="images/flow_icon05.png" alt="STEP5" class="flow__item-step-icon-self-image">
@@ -400,7 +480,7 @@
                     </div>
                     <div class="flow__item">
                         <div class="flow__item-step">
-                            <p class="flow__item-step-number">STEP6</p>
+                            <p class="flow__item-step-number">STEP06</p>
                             <div class="flow__item-step-icon">
                                 <div class="flow__item-step-icon-self">
                                     <img src="images/flow_icon06.png" alt="STEP6" class="flow__item-step-icon-self-image">
@@ -415,17 +495,26 @@
                         </div>
                     </div> 
                 </div>
-                <img src="images/flow.png" alt="ご契約の流れ" class="flow__image">
+                <div class="flow__bubble">
+                    <div class="flow__bubble-text">
+                        <p>
+                            ご契約後も安心してお任せください。<br>
+                            丁寧なサポートと柔軟な対応で、<br>
+                            成果につながる運用をしっかりと支援いたします。
+                        </p>
+                    </div>
+                    <img src="images/flow.png" alt="ご契約の流れ" class="flow__image">
+                </div>
             </div>
         </section>
-        <section class="faq">
+        <section class="faq" id="faq">
             <div class="faq__inner inner">
                 <h2 class="section__title faq__title">よくある<br class="u-tb">質問</h2>
                 <div class="faq__container">
                     <div class="faq__container-item">
                         <div class="faq__container-item-question">
                             <span class="faq__container-item-question-tag faq__container-item-tag">Q</span>
-                            <h3 class="faq__container-item-question-text">質問1</h3>
+                            <h3 class="faq__container-item-question-text">提案や見積もりに費用は発生しますか？</h3>
                             <div class="faq__container-item-question-button active">
                                 <span class="faq__container-item-question-button-line"></span>
                                 <span class="faq__container-item-question-button-line"></span>
@@ -433,13 +522,13 @@
                         </div>
                         <div class="faq__container-item-answer active">
                             <span class="faq__container-item-answer-tag faq__container-item-tag">A</span>
-                            <p class="faq__container-item-answer-text">回答1</p>
+                            <p class="faq__container-item-answer-text">いいえ、ご提案やお見積りは無料で対応させていただきます。<br>マーケティングに関するお悩みやご相談があればお気軽にお問い合わせください。</p>
                         </div>
                     </div>
                     <div class="faq__container-item">
                         <div class="faq__container-item-question">
                             <span class="faq__container-item-question-tag faq__container-item-tag">Q</span>
-                            <h3 class="faq__container-item-question-text">質問1</h3>
+                            <h3 class="faq__container-item-question-text">どのような業種・業界に対応可能ですか？</h3>
                             <div class="faq__container-item-question-button">
                                 <span class="faq__container-item-question-button-line"></span>
                                 <span class="faq__container-item-question-button-line"></span>
@@ -447,13 +536,13 @@
                         </div>
                         <div class="faq__container-item-answer">
                             <span class="faq__container-item-answer-tag faq__container-item-tag">A</span>
-                            <p class="faq__container-item-answer-text">回答1</p>
+                            <p class="faq__container-item-answer-text">今の時代、Webマーケティングはどの業種にも必要です。<br>弊社のWeb集客サービスは、様々な業種のお客様から集客・求人獲得などを目的としてご依頼いただいています。</p>
                         </div>
                     </div>
                     <div class="faq__container-item">
                         <div class="faq__container-item-question">
                             <span class="faq__container-item-question-tag faq__container-item-tag">Q</span>
-                            <h3 class="faq__container-item-question-text">質問1</h3>
+                            <h3 class="faq__container-item-question-text">相談内容が漠然としているのですが、相談可能でしょうか？</h3>
                             <div class="faq__container-item-question-button">
                                 <span class="faq__container-item-question-button-line"></span>
                                 <span class="faq__container-item-question-button-line"></span>
@@ -461,7 +550,7 @@
                         </div>
                         <div class="faq__container-item-answer">
                             <span class="faq__container-item-answer-tag faq__container-item-tag">A</span>
-                            <p class="faq__container-item-answer-text">〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇</p>
+                            <p class="faq__container-item-answer-text">はい、問題ございません。<br>貴社のマーケティング・事業戦略などをヒアリングし、ビジネス全体におけるWeb集客の位置づけのすり合わせをさせていただきます。</p>
                         </div>
                     </div>
                 </div>
@@ -478,58 +567,100 @@
                 </div>
                 <div class="contact__container">
                     <h2 class="section__title contact__title">お問い合わせ</h2>
-                    <form action="" class="contact__form" novalidate>
+                    <?php
+                    if(isset($errors['common'])){
+                        echo "<em id='forms-field-common-error' class='forms-error' role='alert' aria-label='エラーメッセージ' for=''>".$errors['common']."</em>";
+                    }
+                    ?>
+                    <form action="./#contact" class="contact__form" method="POST" name="form1" novalidate>
+                        <input type="hidden" name="form_token" value="<?php echo $_SESSION['form_token']; ?>">
+                        <input type="hidden" name="success_message" id="success_message" value="<?php echo $success_message; ?>">
                         <div class="contact__form-group">
                             <label class="contact__form-label" for="name">お名前 <span class="contact__form-required-mark">*</span></label>
-                            <input class="contact__form-input" type="text" id="name" name="name" required placeholder="山田 太郎" maxlength="10">
+                            <input class="contact__form-input" type="text" id="_name" name="_name" value="<?php echo $data['_name']; ?>" required placeholder="山田 太郎" maxlength="10">
+                            <?php
+                                if(isset($errors['_name']) ){
+                                echo "<div class='error-message'>".$errors['_name']."</div>";
+                                }
+                            ?>
                         </div>
                         <div class="contact__form-group">
                             <label class="contact__form-label" for="company">会社名 <span class="contact__form-required-mark">*</span></label>
-                            <input class="contact__form-input" type="text" id="company" name="company" required placeholder="株式会社アリカ" maxlength="20">
+                            <input class="contact__form-input" type="text" id="company" name="company" value="<?php echo $data['company']; ?>" required placeholder="株式会社アリカ" maxlength="20">
+                            <?php
+                                if(isset($errors['company']) ){
+                                echo "<div class='error-message'>".$errors['company']."</div>";
+                                }
+                            ?>
                         </div>
                         <div class="contact__form-group">
                             <label class="contact__form-label" for="email">メールアドレス <span class="contact__form-required-mark">*</span></label>
-                            <input class="contact__form-input" type="text" id="email" name="email" required placeholder="example@example.com" maxlength="50">
+                            <input class="contact__form-input" type="text" id="email" name="email" value="<?php echo $data['email']; ?>" required placeholder="example@example.com" maxlength="50">
+                            <?php
+                                if(isset($errors['email']) ){
+                                echo "<div class='error-message'>".$errors['email']."</div>";
+                                }
+                            ?>
                         </div>
                         <div class="contact__form-group">
                             <label class="contact__form-label" for="tel">電話番号</label>
-                            <input class="contact__form-input" type="text" id="tel" name="tel" placeholder="08012345678" maxlength="11">
+                            <input class="contact__form-input" type="text" id="tel" name="tel" value="<?php echo $data['tel']; ?>" placeholder="08012345678" maxlength="11">
+                            <?php
+                                if(isset($errors['tel']) ){
+                                echo "<div class='error-message'>".$errors['tel']."</div>";
+                                }
+                            ?>
                         </div>
                         <div class="contact__form-group">
                             <label class="contact__form-label" for="inquiry_type">ご興味のあるサービス<span class="contact__form-multiple-text">※複数選択可能</span></label>
                             <div class="contact__form-checkbox-group">
                                 <div class="contact__form-checkbox-item">
-                                    <input class="contact__form-checkbox-input" type="checkbox" id="inquiry_web" name="inquiry_type[]" value="web">
+                                    <input class="contact__form-checkbox-input" type="checkbox" id="inquiry_web" name="inquiry_type[]" value="1" <?php if (in_array('1', $data['inquiry_type'])) echo 'checked'; ?>>
                                     <label class="contact__form-checkbox-label" for="inquiry_web">個別無料相談<span class="contact__form-supplement-text">(「まずは気軽に相談してみたい」という方はこちらを選んでください。)</span></label>
                                 </div>
                                 <div class="contact__form-checkbox-item">
-                                    <input class="contact__form-checkbox-input" type="checkbox" id="inquiry_sns" name="inquiry_type[]" value="sns">
+                                    <input class="contact__form-checkbox-input" type="checkbox" id="inquiry_sns" name="inquiry_type[]" value="2" <?php if (in_array('2', $data['inquiry_type'])) echo 'checked'; ?>>
                                     <label class="contact__form-checkbox-label" for="inquiry_sns">クリエイティブ<span class="contact__form-supplement-text">(Webサイト・LP制作/コンテンツ作成 など)</span></label>
                                 </div>
                                 <div class="contact__form-checkbox-item">
-                                    <input class="contact__form-checkbox-input" type="checkbox" id="inquiry_ai" name="inquiry_type[]" value="ai">
+                                    <input class="contact__form-checkbox-input" type="checkbox" id="inquiry_ai" name="inquiry_type[]" value="3" <?php if (in_array('3', $data['inquiry_type'])) echo 'checked'; ?>>
                                     <label class="contact__form-checkbox-label" for="inquiry_ai">SNSマーケティング<span class="contact__form-supplement-text">(PR代行/運用代行/キャスティング/イベント企画 など)</span></label>
                                 </div>
                                 <div class="contact__form-checkbox-item">
-                                    <input class="contact__form-checkbox-input" type="checkbox" id="inquiry_system" name="inquiry_type[]" value="system">
+                                    <input class="contact__form-checkbox-input" type="checkbox" id="inquiry_system" name="inquiry_type[]" value="4" <?php if (in_array('4', $data['inquiry_type'])) echo 'checked'; ?>>
                                     <label class="contact__form-checkbox-label" for="inquiry_system">AIマーケティング<span class="contact__form-supplement-text">(AIを活用したSEO対策などのマーケティング施策 など)</span></label>
                                 </div>
                                 <div class="contact__form-checkbox-item">
-                                    <input class="contact__form-checkbox-input" type="checkbox" id="inquiry_other" name="inquiry_type[]" value="other">
+                                    <input class="contact__form-checkbox-input" type="checkbox" id="inquiry_other" name="inquiry_type[]" value="5" <?php if (in_array('5', $data['inquiry_type'])) echo 'checked'; ?>>
                                     <label class="contact__form-checkbox-label" for="inquiry_other">システム・アプリ開発<span class="contact__form-supplement-text">(ios, Androidアプリ制作/AI技術開発/その他システム開発 など)</span></label>
                                 </div>
                             </div>
+                            <?php
+                                if(isset($errors['inquiry_type']) ){
+                                echo "<div class='error-message'>".$errors['inquiry_type']."</div>";
+                                }
+                            ?>
                         </div>
                         <div class="contact__form-group">
                             <label class="contact__form-label" for="message">お問い合わせ内容 <span class="contact__form-required-mark">*</span></label>
                             <p class="contact__form-supplement-text">※業種や現在の課題、参考サイト等を記入いただくとお話がスムーズに進みます。</p>
-                            <textarea class="contact__form-textarea contact__form-input" id="message" name="message" rows="6" required placeholder="お問い合わせ内容をご記入ください"></textarea>
+                            <textarea class="contact__form-textarea contact__form-input" id="message" name="message" rows="6" required placeholder="お問い合わせ内容をご記入ください"><?php echo $data['message']; ?></textarea>
+                            <?php
+                                if(isset($errors['message']) ){
+                                echo "<div class='error-message'>".$errors['message']."</div>";
+                                }
+                            ?>
                         </div>
                         <div class="contact__form-group contact__form-group--privacy">
                             <div class="contact__form-checkbox-label-container">
-                                <input class="contact__form-checkbox-input" type="checkbox" id="privacy" name="privacy" required>
+                                <input class="contact__form-checkbox-input" type="checkbox" id="privacy" name="privacy" value="1" required>
                                 <label class="contact__form-checkbox-label" for="privacy">プライバシーポリシーに同意する</label>
                             </div>
+                            <?php
+                                if(isset($errors['privacy']) ){
+                                echo "<div class='error-message'>".$errors['privacy']."</div>";
+                                }
+                            ?>
                         </div>
                         <button type="submit" class="contact__form-submit-button button">
                             <span class="contact__form-submit-button-arrow contact__form-submit-button-arrow-left">→</span>
@@ -541,14 +672,27 @@
             </div>
         </section>
         <a href="/#fv" class="backToTop">
-        <div class="backToTop_wrap">
-            <span class="backToTop_dot"></span>
-            <span class="backToTop_line"></span>
-            <span class="backToTop_text">top</span>
-        </div>
+            <div class="backToTop_wrap">
+                <span class="backToTop_dot"></span>
+                <span class="backToTop_line"></span>
+                <span class="backToTop_text">top</span>
+            </div>
+        </a>
     </main>
     <footer class="footer">
         <div class="footer__inner inner">
+            <div class="footer__top">
+                <img src="images/logo.svg" alt="株式会社アリカ" class="footer__logo">
+                <ul class="footer__anchor-list">
+                    <li class="footer__anchor-list-item"><a href="/#problem">お悩み</a></li>
+                    <li class="footer__anchor-list-item"><a href="/#solution">解決</a></li>
+                    <li class="footer__anchor-list-item"><a href="/#feature">特徴</a></li>
+                    <li class="footer__anchor-list-item"><a href="/#achievement">実績紹介</a></li>
+                    <li class="footer__anchor-list-item"><a href="/#flow">契約後の流れ</a></li>
+                    <li class="footer__anchor-list-item"><a href="/#faq">よくある質問</a></li>
+                    <li class="footer__anchor-list-item"><a href="/#contact">お問い合わせ</a></li>
+                </ul>
+            </div>
             <div class="footer__container">
                 <p class="footer__container-text">株式会社アリカ</p>
                 <p class="footer__container-text">〒651-0084</p>
@@ -556,7 +700,7 @@
             </div>
             <hr class="footer__hr">
             <div class="footer__container-privacy">
-                <a href="" class="footer__container-privacy-link">プライバシーポリシー</a>
+                <a href="https://ari-ka.co.jp/privacypolicy" target="_blank" class="footer__container-privacy-link">プライバシーポリシー</a>
             </div>
         </div>
     </footer>

@@ -1,4 +1,5 @@
 document.addEventListener('DOMContentLoaded', function () {
+    // メインタブの切り替え
     const tabItems = document.querySelectorAll('.achievement__list-item');
     const tabContents = document.querySelectorAll('.achievement__container');
 
@@ -23,39 +24,8 @@ document.addEventListener('DOMContentLoaded', function () {
             }
         });
     });
-}); 
 
-document.addEventListener('DOMContentLoaded', function () {
-    const faqItems = document.querySelectorAll('.faq__container-item');
-
-    faqItems.forEach(item => {
-        const question = item.querySelector('.faq__container-item-question');
-        const answer = item.querySelector('.faq__container-item-answer');
-        const button = item.querySelector('.faq__container-item-question-button');
-        
-        question.addEventListener('click', () => {
-            // クリックされたアイテムの開閉を切り替え
-            answer.classList.toggle('active');
-            button.classList.toggle('active');
-        });
-    });
-});
-
-document.addEventListener('DOMContentLoaded', function () {
-    const hamburgerButton = document.querySelector('.header__hamburger-button');
-    const hamburger = document.querySelector('.header__hamburger');
-    const hamburgerNav = document.querySelector('.header__nav');
-    const hamburgerContainer = document.querySelector('.header__hamburger-container');
-
-    hamburgerButton.addEventListener('click', function () {
-        hamburgerContainer.classList.toggle('active');
-        hamburgerNav.classList.toggle('active');
-        hamburger.classList.toggle('active');
-    });
-});
-
-document.addEventListener('DOMContentLoaded', function() {
-    // 実績セクションのタブ切り替え
+    // サブタブの切り替え
     const achievementTabs = document.querySelectorAll('.achievement__container-tab');
     
     achievementTabs.forEach(tab => {
@@ -75,5 +45,4 @@ document.addEventListener('DOMContentLoaded', function() {
             contentContainer.querySelector(`[data-tab-content="${target}"]`).classList.add('active');
         });
     });
-});
-
+}); 
